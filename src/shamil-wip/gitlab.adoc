@@ -1,0 +1,5 @@
+﻿
+
+/srv/gitlab/config/gitlab.rb
+
+external_url 'https://git.pzdc.de'
