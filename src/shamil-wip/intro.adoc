@@ -1,22 +1,6 @@
 = Введение
 :toc:
 
-[[about]]
-== На хера козе баян?
-В этой книге я собираю свой многолетний (с 2002) опыт в области разработки ПО.
-Для меня это место изложения своей точки зрения по различным вопросам, без необходимости делать это много раз повторно, плюс сборник практических заметок.
-В отличие от блога, данное повествования я надеюсь держать в некой структурированной и актуальной форме, позволяющей последовательное изучение.
-
-Мнение моё, разумеется, субъективно и полностью основывается на собственном опыте и его интерпретации.
-Посему было бы интересно выслушать других разработчиков, а также вопросы начинающих, что можно сделать понятнее в этом link:https://t.me/bgerp[Telegram канале].
-
-[[howto-write]]
-== Как дописать
-Книжка пишется открытым способом в link:https://github.com/Pingvin235/book[GitHub], 
-Для сборки у себя - клонируйте репозитарий и выполните внутри него скрипт `gradlew`.
-Вам понадобится установленная Java 11 в системе.
-
-Ваши изменений можно оформить в произвольно называющуюся ветку и послать Merge request (в GitHub он называется Pull request).
 
 [[language]]
 == Какой язык выбрать?
@@ -27,40 +11,7 @@
 // TODO: структура познания
 Не получится обойтись одним языком, вокруг каждого из них роится толпа знаний и технологий, которые тянут друг друга и постоянно меняются.
 
-Например, в своём CV я помещал примерно следующий список, разделив домены на хорошо известные и просто знакомые.
-----
-Huge hands-on experience in domains:
-- Agile SCRUM / SAFe / Kanban development, TDD, Continuous Delivery;
-- Development process tools: JIRA, YouTrack, Jenkins, GitLab (CI);
-- Software documentation: WiKi, DocBook, Confluence, AsciiDoctor;
-- Databases: MySQL, Oracle, PostgreSQL, Elastic Search;
-- Development of heavily loaded systems;
-- Java SE development: Swing, java.lang, Utils, Collections, Networking, IO, JDBC, Concurrency;
-- J2EE development: JSP, JSTL, Servlets, Struts, Tomcat;
-- Web-applications: HTML, CSS, JS, JQuery, Angular;
-- Network technologies, protocols;
-- OS using and configuring: Linux, Windows, MacOS;
-- Version control systems: GIT, SVN, CVS;
-- Application lifecycle technologies: Gradle, Maven, Ant;
-- Test frameworks: TestNG, JUnit, Mockito;
-- Technologies: XML, XSD, XSLT, JSON, JSON-RPC, JAX-WS;
-- Virtualization: WLS, Docker, VmWare, VirtualBox;
-- Java related technologies: JavaMail, Log4j, Apache FOP, Xalan, Xerces, JEXL, JLDAP, Jasper Reports, iText, ActiveMQ;
-- Development process tools: Jira, YouTrack, Jenkins, GitLab (CI), Sonar Cube;
-- Linux server administration: Nginx, Apache, SSH, etc.;
-- Modern Microsoft O365 stack: Azure AD, SharePoint, Exchange, OneDrive, Teams;
-- IDE: VS Code, Eclipse, WebStorm, Idea, Android Studio.
-
-Known domains:
-- Mobile applications development for Android;
-- Web-applications: TypeScript, React-JS, NodeJS;
-- C++, C# development (Visual Studio);
-- Microcontrollers programming: ATMEL;
-- BASH/Perl/Python/PHP/Power Shell scripting, CGI scripts;
-- Databases: LDAP, MongoDB, Sphinx;
-- Java related technologies: Hibernate, Spring, JSF, JavaMail, Log4j, Apache FOP, Xalan, Xerces, JEXL, JLDAP, Jasper Reports, iText, ActiveMQ.
-----
-
+Например, в своём <<cv#, CV>> я помещал примерно следующий список, разделив домены на хорошо известные и просто знакомые.
 Со всем этим в той или иной мере мне приходилось сталкиваться и у любого профессионала портянка будет не меньше.
 
 === Хорошая новость
@@ -74,6 +25,52 @@ Known domains:
 
 == Bash
 
+
+== Основные свойства
+- Типизация - весь код становится связанным, но писать приходится больше.
+
+Статические и динамические языки.
+Языки динамические практически невозможно поддержать в IDE.
+Их очень дорого 
+
+- Унификация - один способ сделать одну вещь. Строки с разными кавычками, форматирование - всё распыляет знания.
+Тратится время на изучение отстутствующих различий.
+
+Perl - посмотреть передачу переменных по ссылкам.
+Нынешний преемник - Gradle, JavaScript.
+
+Слишком гибкие, слишком много способов сделать одно и то же. Абстракции, отсутствующие в языке изобретаются самостоятельно во фреймворках. Язык не предлагает
+
+Хорошо, когда есть однозначные принципы, когда что делать, лишнего не думать. Единообразный формат, скобки, 
+
+
+- Асинхронность - один поток в браузере, лапша
+
+=== JavaScript
+Assembler для браузеров.
+
+options = options || {};
+
+const f = (param) => { 
+	do something;
+}
+
+JSON is cool
+data = {a:   }
+
+
+Очень низкий порог входа и можно писать первый раз очень быстро.
+
+Отсутствии проверки типов (оно и сокращает запись) делает поддержку кода чрезвычайно дорогой.
+
+Можно легко менять типы, только что вот была строка, а присваивается объект.
+
+Явно не задуманные заранее вещи, типа Perl:
+
+// "use strict";
+
+Или импорты в TypeScript, к тому же типизация там не приводит к оптимизации выполнения, браузер
+получает тот же JS.
 
 === Какой-никакой выбор
 [[language-system]]
@@ -98,6 +95,7 @@ Known domains:
 Не стоит, однако, сильно увекаться Java Script. Я рекомендую оставить его только для простых манипуляций DOM деревом и отправки AJAX запросов на клиенте. Все вычисление, работу с данными и формирование HTML блоков - выполнять на сервере.
 
 // TODO: Server side rendering.
+
 
 // https://t.me/bgerp/3264
 ==== Специальные языки вроде 1C либо SAP ABI

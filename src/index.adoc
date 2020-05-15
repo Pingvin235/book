@@ -3,6 +3,8 @@
 
 * <<changes.adoc#, Изменения>>
 * <<intro.adoc#, Введение>>
+* Языки программирования
+** <<shell.adoc#, Shell>>
 * <<bgbilling.adoc#, BGBilling>>
 * Технологии
 ** <<network/ssh.adoc#, SSH>>

@@ -1,0 +1,34 @@
+= CV 
+
+----
+Huge hands-on experience in domains:
+- Agile SCRUM / SAFe / Kanban development, TDD, Continuous Delivery;
+- Development process tools: JIRA, YouTrack, Jenkins, GitLab (CI);
+- Software documentation: WiKi, DocBook, Confluence, AsciiDoctor;
+- Databases: MySQL, Oracle, PostgreSQL, Elastic Search;
+- Development of heavily loaded systems;
+- Java SE development: Swing, java.lang, Utils, Collections, Networking, IO, JDBC, Concurrency;
+- J2EE development: JSP, JSTL, Servlets, Struts, Tomcat;
+- Web-applications: HTML, CSS, JS, JQuery, Angular;
+- Network technologies, protocols;
+- OS using and configuring: Linux, Windows, MacOS;
+- Version control systems: GIT, SVN, CVS;
+- Application lifecycle technologies: Gradle, Maven, Ant;
+- Test frameworks: TestNG, JUnit, Mockito;
+- Technologies: XML, XSD, XSLT, JSON, JSON-RPC, JAX-WS;
+- Virtualization: WLS, Docker, VmWare, VirtualBox;
+- Java related technologies: JavaMail, Log4j, Apache FOP, Xalan, Xerces, JEXL, JLDAP, Jasper Reports, iText, ActiveMQ;
+- Development process tools: Jira, YouTrack, Jenkins, GitLab (CI), Sonar Cube;
+- Linux server administration: Nginx, Apache, SSH, etc.;
+- Modern Microsoft O365 stack: Azure AD, SharePoint, Exchange, OneDrive, Teams;
+- IDE: VS Code, Eclipse, WebStorm, Idea, Android Studio.
+
+Known domains:
+- Mobile applications development for Android;
+- Web-applications: TypeScript, React-JS, NodeJS;
+- C++, C# development (Visual Studio);
+- Microcontrollers programming: ATMEL;
+- BASH/Perl/Python/PHP/Power Shell scripting, CGI scripts;
+- Databases: LDAP, MongoDB, Sphinx;
+- Java related technologies: Hibernate, Spring, JSF, JavaMail, Log4j, Apache FOP, Xalan, Xerces, JEXL, JLDAP, Jasper Reports, iText, ActiveMQ.
+----
