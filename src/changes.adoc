@@ -5,6 +5,7 @@
 
 == Лог изменений
 [square]
-* <<shell.adoc#, 15.05.2020>> Shell.
+* <<vcs/git.adoc#backup-github, 22.05.2020>> Бакап конфигураций на приватный репозитарий GitHub.
+* <<lang/shell.adoc#, 15.05.2020>> Shell.
 * <<intro.adoc#, 01.05.2020>> Введение.
 * <<index.adoc#, 30.04.2020>> Первая версия.
