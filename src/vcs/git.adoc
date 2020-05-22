@@ -1,0 +1,38 @@
+= GIT
+
+[[backup-github]]
+== Бакап на GitHub
+Не так давно https://github.com[GitHub] объявил аттракцион небывалой щедрости, неограниченное количество закрытых репозитариев.
+Это значит, что его вполне можно использовать как например бесплатный бакап сервер конфигурационных файлов.
+
+И получить вдовесок:
+[square]
+* версионность;
+* Web интерфейс просмотра и редактирования;
+* протокол совершённых изменений.
+
+CAUTION: Думать о конфиденциальных данных в конфигурациях.
+
+=== Пример бакапа конфигураций сервера *pzdc.de*
+Создать новый закрытый репозитарий: https://github.com/new , назовём его *pzdc.de-etc-nginx*
+
+Скопировать *SSH* имя при создании, например: *git@github.com:Pingvin235/pzdc.de-etc-nginx.git*
+
+Проверить наличие, сгенерировать, если нет и скопировать <<../network/ssh.adoc#keys, открытый SSH ключ>>.
+
+Добавить ключ в настройках https://github.com/settings/keys
+
+Перейти в требуемый каталог, создать GIT репозитарий:
+[source, bash]
+----
+cd /etc/nginx
+git init && git add . && git commit -m "Init"
+git remote add origin git@github.com:Pingvin235/pzdc.de-etc-nginx.git
+git push -u origin master
+----
+
+Далее после изменений:
+[source, bash]
+----
+git add . && git push origin master
+----

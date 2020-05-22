@@ -1,6 +1,31 @@
 = SSH
 :toc:
 
+[[keys]]
+== Генерация ключей
+Проверка наличия ключа:
+[source, bash]
+----
+ls -l ~/.ssh | grep pub
+----
+
+Генерация, если нет:
+[source, bash]
+----
+ssh-keygen -t rsa
+----
+
+Вывод ключа:
+[source, bash]
+----
+cat ~/.ssh/id_rsa.pub
+----
+
+Пример, как он может выглядеть:
+----
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvo95CkkJINgRKRd4j7Vdx3F4O6l1iU8L8fUaHoWAe7nfAZjl1QhPfNlhIGqmj/HCN+gNXkODVXGBshWaBJWZlGgpN28K9HxftQOxy/csf3AKVX1wamJTx/wnqWMO/ZDzQ73OLNNunbLM1fE4QhIiYgX2YcsEcOKVggnZS0b9gJ36RxxHNUEEY9iEB0iSMWRuuCAA9SRqVaicz7fdGtoXisqmMmdJ8BaqeCkC6x61k2Vj23NukCo3BKfErrAOtYnISWBG8+eBDbycn4K+KO9aXb1o+jdURauPc3T+JT/l6HfmHwrDpXnD6SOSd7NjMxUPav+D6SHNzrZfR7gNIze7B root@pzdc.de
+----
+
 [[port-mapping]]
 == Перенаправление порта
 Пример.
