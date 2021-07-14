@@ -32,6 +32,16 @@ git clone https://github.com/Pingvin235/book.git Book
 git checkout -B my-branch
 ----
 
+Коммит всех изменений:
+----
+git add . && git commit -m "Comment"
+----
+
+Отправка изменений ветки в GitHub:
+----
+git push
+----
+
 Получение последних изменений в `master`:
 ----
 git fetch origin master:master
@@ -40,11 +50,6 @@ git fetch origin master:master
 Слияние их на свою ветку:
 ----
 git merge master
-----
-
-Отправка изменений ветки в GitHub:
-----
-git push
 ----
 
 После того как работа в ветке завершена, отправьте Pull Request в GitHub для принятия их в основную ветку и публикации.
