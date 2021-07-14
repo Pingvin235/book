@@ -11,6 +11,6 @@
 		<!-- converter URL, used by DrawIO processor -->
 		<pzdc-drawio-converter>http://drawio.pzdcdoc.org:5000/convert</pzdc-drawio-converter>
 		<!-- source link root -->
-		<pzdc-source-link-root>https://github.com/Pingvin235/book/blob/master</pzdc-source-link-root>
+		<pzdc-source-link-root>https://github.com/Pingvin235/book/blob/master/src</pzdc-source-link-root>
 	</attributes>
 </pzdcdoc>
