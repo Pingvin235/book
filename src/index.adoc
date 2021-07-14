@@ -1,12 +1,14 @@
 = Книга джунглей
 :nofooter:
 
-* <<changes.adoc#, Изменения>>
+* <<changes.adoc#, Changes>>
 * <<intro.adoc#, Введение>>
 * Языки программирования
 ** <<lang/shell.adoc#, Shell>>
 * Технологии
 ** <<network/ssh.adoc#, SSH>>
 ** <<vcs/git.adoc#, GIT>>
+////
 * Биллинг
 ** <<bgbilling.adoc#, BGBilling>>
+ ////

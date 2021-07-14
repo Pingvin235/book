@@ -1,3 +1,4 @@
-= Книга IT джунглей
+= IT book
 
-Публикуется на https://book.pingvin235.ru
+Published to https://book.pzdcdoc.org
+
