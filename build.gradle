@@ -9,15 +9,15 @@ sourceCompatibility = '11'
 targetCompatibility = '11'
 
 dependencies {
-    compile group: 'org.pzdcdoc', name: 'pzdcdoc', version: '1.9'
+    implementation 'org.pzdcdoc:pzdcdoc:2.3'
 }
 
 defaultTasks 'clean', 'buildDoc'
 
 task buildDoc(type:JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = 'org.pzdcdoc.DocGenerator'
-    args 'NOTUSED', 'src', 'target/doc'
+    main = 'org.pzdcdoc.Generator'
+    args '--in', 'src', '--out', 'target/doc'
 }
 
 // bash -c "./gradlew publishDoc -Ppublish.login=user@host -Ppublish.folder=/home/path"
@@ -25,6 +25,9 @@ task publishDoc(dependsOn: 'buildDoc') {
     doFirst {
         def sshLogin = findProperty("publish.login");
         def sshFolder = findProperty("publish.folder")
+
+        def branchName = 'git rev-parse --abbrev-ref HEAD'.execute().text.trim()
+        println "Branch name: $branchName"
 
         def command = "rsync --delete -Pav target/doc/ $sshLogin:$sshFolder"
 
