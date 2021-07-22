@@ -1,5 +1,0 @@
-= Know How [EN]
-
-<<../dev/shamil.adoc#, Author>>
-
-== 
