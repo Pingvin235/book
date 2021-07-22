@@ -1,0 +1,19 @@
+<mxfile host="65bd71144e">
+    <diagram id="kgS2Zu8Znqh3bIXEU0GX" name="Page-1">
+        <mxGraphModel dx="953" dy="910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png" vertex="1" parent="1">
+                    <mxGeometry x="365" y="320" width="41.67" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="image;html=1;image=img/lib/clip_art/people/Construction_Worker_Man_Black_128x128.png" vertex="1" parent="1">
+                    <mxGeometry x="190" y="340" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="image;html=1;image=img/lib/clip_art/computers/MacBook_128x128.png;flipH=1;" vertex="1" parent="1">
+                    <mxGeometry x="355.84" y="420" width="60" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
