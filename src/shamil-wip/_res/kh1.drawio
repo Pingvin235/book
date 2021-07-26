@@ -10,9 +10,6 @@
                 <mxCell id="3" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png" parent="1" vertex="1">
                     <mxGeometry x="374.16" y="346" width="41.67" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="" style="image;html=1;image=img/lib/clip_art/people/Construction_Worker_Man_Black_128x128.png" parent="1" vertex="1">
-                    <mxGeometry x="130" y="350" width="80" height="80" as="geometry"/>
-                </mxCell>
                 <mxCell id="9" value="" style="image;html=1;image=img/lib/clip_art/computers/MacBook_128x128.png;flipH=1;" parent="1" vertex="1">
                     <mxGeometry x="365" y="396" width="60" height="80" as="geometry"/>
                 </mxCell>
@@ -25,14 +22,17 @@
                 <mxCell id="18" value="Actions&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=0;notch=0;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="210" y="396" width="120" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="" style="shape=actor;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="100" y="240" width="40" height="60" as="geometry"/>
-                </mxCell>
                 <mxCell id="20" value="Environment" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="390" y="310" width="80" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="" style="html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.cloud;fontColor=#ffffff;" vertex="1" parent="1">
                     <mxGeometry x="190" y="110" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.satellite;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="460" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.user;fillColor=#CCCBCB;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="340" width="73.6" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
