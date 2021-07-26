@@ -4,8 +4,8 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="19" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_rect;" vertex="1" parent="1">
-                    <mxGeometry x="340" y="300" width="190" height="180" as="geometry"/>
+                <mxCell id="19" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_rect;" parent="1" vertex="1">
+                    <mxGeometry x="335" y="80" width="190" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png" parent="1" vertex="1">
                     <mxGeometry x="374.16" y="346" width="41.67" height="50" as="geometry"/>
@@ -16,17 +16,23 @@
                 <mxCell id="9" value="" style="image;html=1;image=img/lib/clip_art/computers/MacBook_128x128.png;flipH=1;" parent="1" vertex="1">
                     <mxGeometry x="365" y="396" width="60" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Information" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=1;notch=0;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#FFFFFF;" vertex="1" parent="1">
+                <mxCell id="14" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Information" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=1;notch=0;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="210" y="330" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#005700;fillColor=#008a00;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.maintenance;fontColor=#ffffff;" vertex="1" parent="1">
-                    <mxGeometry x="460" y="370" width="39" height="56" as="geometry"/>
+                <mxCell id="17" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#005700;fillColor=#008a00;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.maintenance;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="370" width="40" height="56" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="Actions&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=0;notch=0;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+                <mxCell id="18" value="Actions&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=0;notch=0;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="1" vertex="1">
                     <mxGeometry x="210" y="396" width="120" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="Environment" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+                <mxCell id="21" value="" style="shape=actor;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="240" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Environment" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="390" y="310" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.cloud;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="110" width="90" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
