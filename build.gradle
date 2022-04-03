@@ -22,7 +22,7 @@ task buildDoc(type:JavaExec) {
     args '--in', 'src', '--out', 'target/doc'
 }
 
-// bash -c "./gradlew publishDoc -Ppublish.login=user@host -Ppublish.folder=/home/path"
+// bash -c "./gradlew publishDoc -Ppublish.login=book@bgerp.org -Ppublish.folder=/home/book/www"
 task publishDoc(dependsOn: 'buildDoc') {
     doFirst {
         def sshLogin = findProperty("publish.login");
