@@ -1,4 +1,4 @@
-= CHANGES
+= Changes
 :toc:
 
 Log of changes in reverse time order.
@@ -11,4 +11,4 @@ Log of changes in reverse time order.
 * <<lang/shell.adoc#, 15.05.2020>> Shell.
 * <<intro.adoc#, 01.05.2020>> Введение.
 * <<index.adoc#, 30.04.2020>> Первая версия.
- ////
+////

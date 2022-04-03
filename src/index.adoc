@@ -1,10 +1,11 @@
-= BGERP DEVBOOK
+= BGERP IT-BOOK
 :nofooter:
 
+* <<changes.adoc#, Changes>>
 * <<intro.adoc#, Introduction>>
 * Programming languages
 ** <<lang/shell.adoc#, Shell>>
 * Technologies
-** <<network/ssh.adoc#, SSH [RU]>>
 ** <<vcs/git.adoc#, GIT>>
-* <<changes.adoc#, Changes>>
+** <<network/ssh.adoc#, SSH [RU]>>
+
