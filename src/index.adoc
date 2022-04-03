@@ -1,14 +1,10 @@
-= Книга джунглей
+= DEV-BOOK
 :nofooter:
 
-* <<intro.adoc#, Введение>>
-* Языки программирования
+* <<intro.adoc#, Intro>>
+* Programming languages
 ** <<lang/shell.adoc#, Shell>>
-* Технологии
-** <<network/ssh.adoc#, SSH>>
+* Tools
 ** <<vcs/git.adoc#, GIT>>
+** <<app/ssh.adoc#, SSH [RU]>>
 * <<changes.adoc#, Changes>>
-////
-* Биллинг
-** <<bgbilling.adoc#, BGBilling>>
- ////

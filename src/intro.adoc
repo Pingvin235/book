@@ -1,69 +1,66 @@
-= Введение [RU]
+= Intro
 :toc:
 
-<<dev/shamil.adoc#, Автор>>
+<<author/shamil.adoc#, Author>>
 
 [[about]]
-== О книге
-Данная книга представляет из себя базу знаний по IT технологиям наподобие Wiki,
-но пишется открытым способом в link:https://github.com/Pingvin235/book[GitHub].
+== About
+This books is a Wiki-like knowledge base written on the open way on link:https://github.com/Pingvin235/book[GitHub].
+Here are collected different hints and tips for software developers.
 
-В качестве языка разметки применяется AsciiDoctor, преобразуемый с помощью генератора link:https://pzdcdoc.org[PzdcDoc] в HTML страницы.
-Править *.adoc* файлы можно в любом текстовом редакторе, 
-либо воспользоваться link:https://pzdcdoc.org/demo/src/doc/demo.html#tools[плагинами] для IDE.
+As a markup language used AsciiDoctor, converted using generator link:https://pzdcdoc.org[PzdcDoc] to static HTML pages.
+You can edit *.adoc* files in every text editor or use link:https://pzdcdoc.org/demo/src/doc/demo.html#tools[IDE plugins].
 
 [[prerequisites]]
-== Необходимо установить
-Следующие программы должны быть предустановлены на машине разработчика из репозитория пакетов ОС, либо по ссылке на наименовании программы.
+== Prerequisites
+The following programs have to be installed on machine to edit the book. Use the links for Windows installers or search them by name in OS package manager.
 [square]
-* link:https://git-scm.com/downloads[GIT] для работы с <<#repo, репозиторием>>.
-* link:https://adoptopenjdk.net/[OpenJDK 11] для <<#build, сборки>>.
+* GIT for working with <<#repo, repo>>
+** link:https://git-scm.com/downloads[GIT for Windows]
+* OpenJDK 11 or 17 for <<#build, build>>
+** link:https://adoptium.net[OpenJDK for Windows]
 
 [[repo]]
-== Работа с репозиторием
-Клонирование:
+== Repository
+Clone:
 [source]
 ----
 git clone https://github.com/Pingvin235/book.git Book
 ----
 
-Создание собственной ветки:
+Create own branch:
 ----
 git checkout -B my-branch
 ----
 
-Коммит всех изменений:
+Commit all the changes:
 ----
 git add . && git commit -m "Comment"
 ----
 
-Отправка изменений ветки в GitHub:
+Push commit to GitHub:
 ----
 git push
 ----
 
-Получение последних изменений в `master`:
+Apply latest changes from `master` to your branch:
 ----
-git fetch origin master:master
-----
-
-Слияние их на свою ветку:
-----
-git merge master
+git fetch origin master:master && git merge master
 ----
 
-После того как работа в ветке завершена, отправьте Pull Request в GitHub для принятия их в основную ветку и публикации.
+After your work in branch is done, send a Pull Request to GitHub for accepting your changes to master.
 
 [[build]]
-== Сборка
-Выполните в каталоге <<#repo, репозитория>> команду `./gradlew`. 
-Результат располагается в каталоге `target/doc`, `index.html` файл может быть открыт браузером.
+== Build
+Execute in <<#repo, repo>> directory command `./gradlew`.
+The result is placed in `target/doc`, `index.html` can be opened using browser.
 
+////
 [WARNING]
 ====
-Для преобразования link:https://pzdcdoc.org/demo/src/doc/demo.html#diagrams-drawio[Draw.IO] диаграмм используется контейнер, 
-расположенный на сервере `drawio.pzdcdoc.org`. В случае его недоступности либо медленной работы, 
-запустите свой собственный Docker контейнер командой: 
+Для преобразования link:https://pzdcdoc.org/demo/src/doc/demo.html#diagrams-drawio[Draw.IO] диаграмм используется контейнер,
+расположенный на сервере `drawio.pzdcdoc.org`. В случае его недоступности либо медленной работы,
+запустите свой собственный Docker контейнер командой:
 [source]
 ----
 docker run -d -p 5000:5000 --shm-size=1g tomkludy/drawio-renderer:latest
@@ -71,21 +68,23 @@ docker run -d -p 5000:5000 --shm-size=1g tomkludy/drawio-renderer:latest
 
 Перенаправьте имя `drawio.pzdcdoc.org` на адрес 127.0.0.1 в файле `hosts`.
 ====
+////
 
-[[recommendations]]
-== Рекомендации авторам
-Если где-то в Сети уже есть хорошее руководство - проще разместить ссылку на него.
-Для предотвращения утери в будущем - можно использовать https://archive.is/.
-Пример сохранённой ссылки на https://archive.is/wip/TJsIF[https://bgerp.ru]
+[[guide]]
+== Guidelines
+Place author reference at beginning of every file.
 
-Избегайте больших файлов, они увеличивают размер GIT.
+Case there is a good article exist in Net - place a link to it.
+To do not loose content in the future use https://archive.is/.
+Example of stored reference: https://archive.is/wip/TJsIF[https://bgerp.ru]
 
-Здесь можно посмотреть link:https://pzdcdoc.org/demo/src/doc/demo.html[примеры] разметки, там же есть ссылка на исходный файл AsciiDoc.
+Here may be found link:https://pzdcdoc.org/demo/src/doc/demo.html[examples] of AsciiDoc markup.
 
-Для отслеживания изменений присутствует <<changes.adoc#, лог>>.
+The <<changes.adoc#, log>> is used for tracking changes.
 
-Ссылка на файл описания автора должна быть размещена в начале каждого файла.
+AsciiDoc files and internal anchors have to be named using Latin alphanumeric symbols and *-*.
 
+////
 [[lang]]
 == Многоязычность
 Каждый *article.adoc* файл может быть написан на любом языке.
@@ -96,3 +95,4 @@ docker run -d -p 5000:5000 --shm-size=1g tomkludy/drawio-renderer:latest
 файла будут корректироваться для указания на переводной вариант, если он есть.
 
 Ссылка на файл описания переводчика должна быть размещена в начале файла после ссылки на автора.
+////

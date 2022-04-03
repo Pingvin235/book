@@ -1,0 +1,11 @@
+= Know How
+
+<<../../author/shamil.adoc#, Author>>
+
+This article is about process of humans cognition.
+
+[[interaction]]
+== Interaction
+Let's see our every day interaction with surrounding reality on a very high level.
+drawio:_res/kh1.drawio[width="600px"]
+

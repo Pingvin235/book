@@ -9,7 +9,7 @@
 		<pzdc-javadoc>https://bgerp.org/doc/3.0/javadoc/</pzdc-javadoc>
 		 -->
 		<!-- converter URL, used by DrawIO processor -->
-		<pzdc-drawio-converter>http://drawio.pzdcdoc.org:5000/convert</pzdc-drawio-converter>
+		<pzdc-drawio-converter>http://drawio.bgerp.org:5000/convert</pzdc-drawio-converter>
 		<!-- source link root -->
 		<pzdc-source-link-root>https://github.com/Pingvin235/book/blob/master/src</pzdc-source-link-root>
 	</attributes>
