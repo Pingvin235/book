@@ -49,6 +49,8 @@ The workflow may be useful for remote update of static Web sites content or conf
 
 CAUTION: When selecting the workflow, you must not do changes directly in your remote directory. Otherwise their will be lost.
 
+// TODO: Place Diagram.
+
 Assuming you have remote Web server `bgerp.org` with *static* content placed in `www.bgerp.org` directory.
 And there is a *www* user, allowed to reach the directory.
 
