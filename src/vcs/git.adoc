@@ -47,3 +47,35 @@ git add . && git push origin master
 == One direction
 The workflow may be useful for remote update of static Web sites content or configurations.
 
+CAUTION: When selecting the workflow, you must not do changes directly in your remote directory. Otherwise their will be lost.
+
+Assuming you have remote Web server `bgerp.org` with *static* content placed in `www.bgerp.org` directory.
+And there is a *www* user, allowed to reach the directory.
+
+The directory has to be configured with a GIT repository you using, e.g:
+[source]
+----
+git remote add origin  git@github.com:Pingvin235/bgerp-website-org.git
+----
+
+All the changes are performed in local GIT repository branch based. So you have to create a branch first:
+[source]
+----
+git checkout -B my-change-branch
+----
+
+After do all wanted changes, commit and push them:
+[source]
+----
+git add . && git commit -m "Comment" && git push
+----
+
+NOTE: On first branch push you will be asked about connecting a local branch with remote one.
+
+And now you can make remote <<../network/ssh.adoc#, SSH>> call for fetching the changes:
+[source]
+----
+ssh www@bgerp.org "cd www.bgerp.org && git fetch && git checkout origin/my-change-branch"
+----
+
+Of course you can join push and remote fetch command lines together.
