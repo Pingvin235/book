@@ -1,14 +1,10 @@
-= Книга джунглей
+= BGERP DEVBOOK
 :nofooter:
 
-* <<intro.adoc#, Введение>>
-* Языки программирования
+* <<intro.adoc#, Introduction>>
+* Programming languages
 ** <<lang/shell.adoc#, Shell>>
-* Технологии
-** <<network/ssh.adoc#, SSH>>
+* Technologies
+** <<network/ssh.adoc#, SSH [RU]>>
 ** <<vcs/git.adoc#, GIT>>
 * <<changes.adoc#, Changes>>
-////
-* Биллинг
-** <<bgbilling.adoc#, BGBilling>>
- ////

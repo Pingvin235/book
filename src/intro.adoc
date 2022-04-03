@@ -1,69 +1,62 @@
-= Введение [RU]
+= Introduction
 :toc:
 
-<<dev/shamil.adoc#, Автор>>
+<<author/shamil.adoc#, Author>>
 
 [[about]]
-== О книге
-Данная книга представляет из себя базу знаний по IT технологиям наподобие Wiki,
-но пишется открытым способом в link:https://github.com/Pingvin235/book[GitHub].
+== About
+This books is a Wiki-like knowledge base written on the open way on link:https://github.com/Pingvin235/book[GitHub]
 
-В качестве языка разметки применяется AsciiDoctor, преобразуемый с помощью генератора link:https://pzdcdoc.org[PzdcDoc] в HTML страницы.
-Править *.adoc* файлы можно в любом текстовом редакторе, 
-либо воспользоваться link:https://pzdcdoc.org/demo/src/doc/demo.html#tools[плагинами] для IDE.
+As a markup language used AsciiDoctor, converted using generator link:https://pzdcdoc.org[PzdcDoc] to static HTML pages.
+You can edit *.adoc* files in every text editor or use link:https://pzdcdoc.org/demo/src/doc/demo.html#tools[IDE plugins].
 
 [[prerequisites]]
-== Необходимо установить
+== Prerequisites
 Следующие программы должны быть предустановлены на машине разработчика из репозитория пакетов ОС, либо по ссылке на наименовании программы.
 [square]
 * link:https://git-scm.com/downloads[GIT] для работы с <<#repo, репозиторием>>.
 * link:https://adoptopenjdk.net/[OpenJDK 11] для <<#build, сборки>>.
 
 [[repo]]
-== Работа с репозиторием
-Клонирование:
+== Work with repository
+Clone:
 [source]
 ----
 git clone https://github.com/Pingvin235/book.git Book
 ----
 
-Создание собственной ветки:
+Create own branch:
 ----
 git checkout -B my-branch
 ----
 
-Коммит всех изменений:
+Commit all the changes:
 ----
 git add . && git commit -m "Comment"
 ----
 
-Отправка изменений ветки в GitHub:
+Push commit to GitHub:
 ----
 git push
 ----
 
-Получение последних изменений в `master`:
+Apply latest changes from `master` to your branch:
 ----
-git fetch origin master:master
-----
-
-Слияние их на свою ветку:
-----
-git merge master
+git fetch origin master:master && git merge master
 ----
 
-После того как работа в ветке завершена, отправьте Pull Request в GitHub для принятия их в основную ветку и публикации.
+After your work in branch is done, send a Pull Request to GitHub for accepting your changes to master.
 
 [[build]]
-== Сборка
-Выполните в каталоге <<#repo, репозитория>> команду `./gradlew`. 
+== Build
+Выполните в каталоге <<#repo, репозитория>> команду `./gradlew`.
 Результат располагается в каталоге `target/doc`, `index.html` файл может быть открыт браузером.
 
 [WARNING]
 ====
-Для преобразования link:https://pzdcdoc.org/demo/src/doc/demo.html#diagrams-drawio[Draw.IO] диаграмм используется контейнер, 
-расположенный на сервере `drawio.pzdcdoc.org`. В случае его недоступности либо медленной работы, 
-запустите свой собственный Docker контейнер командой: 
+Для преобразования link:https://pzdcdoc.org/demo/src/doc/demo.html#diagrams-drawio[Draw.IO] диаграмм используется контейнер,
+расположенный на сервере `drawio.pzdcdoc.org`. В случае его недоступности либо медленной работы,
+запустите свой собственный Docker контейнер командой:
 [source]
 ----
 docker run -d -p 5000:5000 --shm-size=1g tomkludy/drawio-renderer:latest
