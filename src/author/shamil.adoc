@@ -1,1 +1,19 @@
 = Shamil Vakhitov
+
+[[about]]
+== About
+A software developer since 2002.
+
+[[contact]]
+== Contacts
+[square]
+* link:https://github.com/pingvin235[GitHub]
+* link:https://t.me/pingvin235[Telegram]
+* link:https://www.linkedin.com/in/pingvin235[LinkedIn]
+* link:https://fb.com/pingvin235[FB]
+
+[[projects]]
+== Projects
+[square]
+* link:https://bgerp.org[BGERP] - open source CRM/ERP/BPM system;
+* link:https://pzdcdoc.org[PzdcDoc] - software documentation framework.

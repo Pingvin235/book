@@ -1,28 +1,34 @@
 = GIT
+:toc:
 
-[[backup-github]]
-== Бакап на GitHub
-Не так давно https://github.com[GitHub] объявил аттракцион небывалой щедрости, неограниченное количество закрытых репозитариев.
-Это значит, что его вполне можно использовать как например бесплатный бакап сервер конфигурационных файлов.
+<<../author/shamil.adoc#, Author>>
 
-И получить вдовесок:
+[[workflow]]
+== Workflows
+GIT is very powerful and complex version control system, allowing to implement different workflows for various purposes.
+
+[[workflow-backup]]
+== Backup
+Some time ago https://github.com[GitHub] announced generous offer, unlimited amount of private repositories.
+That means you can use it as backup of your configurations.
+
+So you get for free except of backup:
 [square]
-* версионность;
-* Web интерфейс просмотра и редактирования;
-* протокол совершённых изменений.
+* versioning;
+* Web interface for viewing and editing;
+* audit of made changes.
 
-CAUTION: Думать о конфиденциальных данных в конфигурациях.
+CAUTION: Think about confidential data in configurations.
 
-=== Пример бакапа конфигураций сервера *pzdc.de*
-Создать новый закрытый репозитарий: https://github.com/new , назовём его *pzdc.de-etc-nginx*
+[[workflow-backup-example]]
+=== Example of backup for /etc/nginx of *pzdc.de*
+Create new repo: https://github.com/new with name *pzdc.de-etc-nginx*
 
-Скопировать *SSH* имя при создании, например: *git@github.com:Pingvin235/pzdc.de-etc-nginx.git*
+Copy *SSH* URL, e.g: *git@github.com:Pingvin235/pzdc.de-etc-nginx.git*
 
-Проверить наличие, сгенерировать, если нет и скопировать <<../network/ssh.adoc#keys, открытый SSH ключ>>.
+Take <<../network/ssh.adoc#keys, public SSH key>> and add it to link:https://github.com/settings/keys
 
-Добавить ключ в настройках https://github.com/settings/keys
-
-Перейти в требуемый каталог, создать GIT репозитарий:
+Create local GIT repo:
 [source, bash]
 ----
 cd /etc/nginx
@@ -31,8 +37,13 @@ git remote add origin git@github.com:Pingvin235/pzdc.de-etc-nginx.git
 git push -u origin master
 ----
 
-Далее после изменений:
+Do after any change:
 [source, bash]
 ----
 git add . && git push origin master
 ----
+
+[[workflow-one-direction]]
+== One direction
+The workflow may be useful for remote update of static Web sites content or configurations.
+
