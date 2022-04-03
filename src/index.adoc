@@ -1,11 +1,10 @@
 = BGERP IT-BOOK
 :nofooter:
 
-* <<changes.adoc#, Changes>>
 * <<intro.adoc#, Introduction>>
 * Programming languages
 ** <<lang/shell.adoc#, Shell>>
 * Technologies
 ** <<vcs/git.adoc#, GIT>>
 ** <<network/ssh.adoc#, SSH [RU]>>
-
+* <<changes.adoc#, Changes>>

@@ -8,6 +8,8 @@ repositories {
 sourceCompatibility = '11'
 targetCompatibility = '11'
 
+buildDir = 'target'
+
 dependencies {
     implementation 'org.pzdcdoc:pzdcdoc:2.5'
 }

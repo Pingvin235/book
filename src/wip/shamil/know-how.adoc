@@ -1,6 +1,6 @@
-= Know How [EN]
+= Know How
 
-<<../dev/shamil.adoc#, Author>>
+<<../../author/shamil.adoc#, Author>>
 
 This article is about process of humans cognition.
 
