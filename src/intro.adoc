@@ -1,4 +1,4 @@
-= Introduction
+= Intro
 :toc:
 
 <<author/shamil.adoc#, Author>>

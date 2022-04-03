@@ -26,7 +26,7 @@ Create new repo: https://github.com/new with name *pzdc.de-etc-nginx*
 
 Copy *SSH* URL, e.g: *git@github.com:Pingvin235/pzdc.de-etc-nginx.git*
 
-Take <<../network/ssh.adoc#keys, public SSH key>> and add it to link:https://github.com/settings/keys
+Take <<../app/ssh.adoc#keys, public SSH key>> and add it to link:https://github.com/settings/keys
 
 Create local GIT repo:
 [source, bash]
@@ -74,7 +74,7 @@ git add . && git commit -m "Comment" && git push
 
 NOTE: On first branch push you will be asked about connecting a local branch with remote one.
 
-And now you can make remote <<../network/ssh.adoc#, SSH>> call for fetching the changes:
+And now you can make remote <<../app/ssh.adoc#, SSH>> call for fetching the changes:
 [source]
 ----
 ssh www@bgerp.org "cd www.bgerp.org && git fetch && git checkout origin/my-change-branch"
